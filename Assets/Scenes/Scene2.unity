@@ -2888,8 +2888,8 @@ MonoBehaviour:
   pillar1: {fileID: 1372408785}
   pillar2: {fileID: 1203092152}
   pillar3: {fileID: 603414686}
-  tourner: {fileID: 8300000, guid: 8fcfa25303f37724aacabc47368adff4, type: 3}
-  ouvrir_porte: {fileID: 8300000, guid: ad722a6f558cd4c40a258d9b37dfb813, type: 3}
+  tourner: {fileID: 8300000, guid: eb99138c3524a6048a99173ec793e2f7, type: 3}
+  ouvrir_porte: {fileID: 8300000, guid: ba2bca7fdf5f4ec4e961966a82b27286, type: 3}
   zia: {fileID: 3664717823200236910}
   anim: {fileID: 1688208901}
 --- !u!212 &145031351
@@ -5036,7 +5036,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 37f263643496faa478638367b541a6fe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2f0b0f917085d3241ae2672803a711c2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -35054,8 +35054,8 @@ MonoBehaviour:
   pillar1: {fileID: 145031348}
   pillar2: {fileID: 1372408785}
   pillar3: {fileID: 1203092152}
-  tourner: {fileID: 8300000, guid: 8fcfa25303f37724aacabc47368adff4, type: 3}
-  ouvrir_porte: {fileID: 8300000, guid: ad722a6f558cd4c40a258d9b37dfb813, type: 3}
+  tourner: {fileID: 8300000, guid: eb99138c3524a6048a99173ec793e2f7, type: 3}
+  ouvrir_porte: {fileID: 8300000, guid: ba2bca7fdf5f4ec4e961966a82b27286, type: 3}
   zia: {fileID: 3664717823200236910}
   anim: {fileID: 1688208901}
 --- !u!61 &603414688
@@ -43756,8 +43756,8 @@ MonoBehaviour:
   pillar1: {fileID: 145031348}
   pillar2: {fileID: 1372408785}
   pillar3: {fileID: 603414686}
-  tourner: {fileID: 8300000, guid: 8fcfa25303f37724aacabc47368adff4, type: 3}
-  ouvrir_porte: {fileID: 8300000, guid: ad722a6f558cd4c40a258d9b37dfb813, type: 3}
+  tourner: {fileID: 8300000, guid: eb99138c3524a6048a99173ec793e2f7, type: 3}
+  ouvrir_porte: {fileID: 8300000, guid: ba2bca7fdf5f4ec4e961966a82b27286, type: 3}
   zia: {fileID: 3664717823200236910}
   anim: {fileID: 1688208901}
 --- !u!61 &1203092154
@@ -47541,8 +47541,8 @@ MonoBehaviour:
   pillar1: {fileID: 145031348}
   pillar2: {fileID: 1203092152}
   pillar3: {fileID: 603414686}
-  tourner: {fileID: 8300000, guid: 8fcfa25303f37724aacabc47368adff4, type: 3}
-  ouvrir_porte: {fileID: 8300000, guid: ad722a6f558cd4c40a258d9b37dfb813, type: 3}
+  tourner: {fileID: 8300000, guid: eb99138c3524a6048a99173ec793e2f7, type: 3}
+  ouvrir_porte: {fileID: 8300000, guid: ba2bca7fdf5f4ec4e961966a82b27286, type: 3}
   zia: {fileID: 3664717823200236910}
   anim: {fileID: 1688208901}
 --- !u!61 &1372408787
@@ -64632,15 +64632,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8010109524819315675, guid: d1041835927d5034eba60e624ffcd270,
-        type: 3}
-      propertyPath: maxSlopeAngle
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 8010109524819315668, guid: d1041835927d5034eba60e624ffcd270,
         type: 3}
       propertyPath: jumpHeight
       value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010109524819315675, guid: d1041835927d5034eba60e624ffcd270,
+        type: 3}
+      propertyPath: maxSlopeAngle
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8010109524819315625, guid: d1041835927d5034eba60e624ffcd270,
         type: 3}
@@ -64999,7 +64999,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &8228720296809768108
 CanvasRenderer:
   m_ObjectHideFlags: 0
