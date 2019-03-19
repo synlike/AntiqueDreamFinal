@@ -6,6 +6,7 @@ public class Ladder : MonoBehaviour
 {
     public GameObject fermeture;
     public CharacterControllerZia controller;
+    public Player playerScript;
     public Animator anim;
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -14,6 +15,7 @@ public class Ladder : MonoBehaviour
         {
             print("yo");
             controller.climbing = false;
+            playerScript.climbing = false;
             anim.SetTrigger("returnIdle");
             fermeture.GetComponent<BoxCollider2D>().enabled = !fermeture.GetComponent<BoxCollider2D>().enabled;
         }
@@ -23,6 +25,8 @@ public class Ladder : MonoBehaviour
         if (collision.gameObject.tag == "player")
         {
             anim.SetTrigger("returnIdle");
+            playerScript.climbing = false;
+            controller.climbing = false;
         }
     }
 }

@@ -50,7 +50,7 @@ public class LandingDetect : MonoBehaviour
 
         if (isJumping && !playerScript.jumping && !playerScript.climbing && !controller.collisions.below)
         {
-
+            print("chute");
             if(playerScript.hasJetpack)
                 anim.SetTrigger("chuteSpe");
             else
