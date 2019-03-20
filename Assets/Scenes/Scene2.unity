@@ -474,6 +474,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &8763635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4159484564062629344, guid: 7354b686dc94cb44a917e29c7bb77137,
+    type: 3}
+  m_PrefabInstance: {fileID: 166736868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &13863757
 GameObject:
   m_ObjectHideFlags: 0
@@ -37270,7 +37276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713980783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.79, y: 42.61, z: 32.28}
+  m_LocalPosition: {x: 27.79, y: 43.76, z: 32.28}
   m_LocalScale: {x: 0.39799762, y: 0.39799762, z: 0.39799762}
   m_Children: []
   m_Father: {fileID: 613171728}
@@ -53026,7 +53032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515eb1038b5e3cc45aa31e4e0247f983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 8228720296809768105}
+  loadingScreen: {fileID: 8763635}
 --- !u!1 &1653873554
 GameObject:
   m_ObjectHideFlags: 0
@@ -64726,6 +64732,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8010109524819315668, guid: d1041835927d5034eba60e624ffcd270,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010109524819315675, guid: d1041835927d5034eba60e624ffcd270,
+        type: 3}
+      propertyPath: maxSlopeAngle
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8010109524819315625, guid: d1041835927d5034eba60e624ffcd270,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -64785,16 +64801,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8010109524819315675, guid: d1041835927d5034eba60e624ffcd270,
-        type: 3}
-      propertyPath: maxSlopeAngle
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8010109524819315668, guid: d1041835927d5034eba60e624ffcd270,
-        type: 3}
-      propertyPath: jumpHeight
-      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 8010109524819315673, guid: d1041835927d5034eba60e624ffcd270,
         type: 3}

@@ -31,6 +31,7 @@ public class Lever : MonoBehaviour
     {
         if (Input.GetButtonDown("Grab") && playerIn)
         {
+            playerScript.isLookingLeft = true;
             animPlayer.SetTrigger("activate");
             GetComponent<AudioSource>().PlayOneShot(levier);
 
