@@ -10,9 +10,10 @@ public class CutSceneScan : MonoBehaviour
     Animator anim;
     Animator animPlayer;
     public Animator animPorte;
-    public AudioClip son;
+    public AudioClip son; // dodo
     public AudioClip robotAffole;
     public AudioSource dodo;
+    public AudioClip sonScan;
 
 
     void Start()
@@ -51,5 +52,8 @@ public class CutSceneScan : MonoBehaviour
             playerScript.enabled = false;
             LaunchCutScene();
         }
+    }
+    void scannage(){
+        GetComponent<AudioSource>().PlayOneShot(sonScan);
     }
 }

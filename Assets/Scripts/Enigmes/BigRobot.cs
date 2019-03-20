@@ -18,7 +18,8 @@ public class BigRobot : MonoBehaviour
     public Animator animRobot;
     public Animator animArm;
     public Animator animValve;
-
+    public AudioClip insererValve;
+    public AudioClip leverBras;
     public AudioClip valveSound;
 
     void Start()
@@ -33,6 +34,8 @@ public class BigRobot : MonoBehaviour
         if (Input.GetButtonDown("Grab") && isValve && inTrig && !activated)
         {
             StartCoroutine(ValveOn());
+      
+
         }
 
         if (Input.GetButtonDown("Grab") && player.GetComponent<Interact>().inventory == "valveSol" && !isValve && inTrig)
@@ -62,6 +65,8 @@ public class BigRobot : MonoBehaviour
             if (isValve)
             {
                 valveHalo.enabled = true;
+                GetComponent<AudioSource>().PlayOneShot(insererValve); 
+                print("inserer valve"); // ICI ON INSERE LA VALVE DANS SA GROSSE 
             }
         }
     }
@@ -78,7 +83,7 @@ public class BigRobot : MonoBehaviour
 
     IEnumerator ValveOn()
     {
-        GetComponent<AudioSource>().PlayOneShot(valveSound);
+        GetComponent<AudioSource>().PlayOneShot(valveSound); // LA VALVE TOURNE
         animValve.SetTrigger("activate");
         valveTmp.enabled = false;
         animPlayer.SetTrigger("activate");
@@ -94,5 +99,6 @@ public class BigRobot : MonoBehaviour
         animArm.SetTrigger("up");
         arm.GetComponent<BoxCollider2D>().enabled = false;
         activated = false;
+        GetComponent<AudioSource>().PlayOneShot(leverBras); // lE BRAS SE LEVE
     }
 }

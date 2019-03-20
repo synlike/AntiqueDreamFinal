@@ -13,6 +13,7 @@ public class CutsceneSave : MonoBehaviour
     public GameObject rocher;
     public GameObject rocherFall;
     public GameObject scene;
+    public AudioClip sonExplosion;
 
     public GameObject spawnPoint;
 
@@ -94,5 +95,9 @@ public class CutsceneSave : MonoBehaviour
         yield return new WaitForSeconds(2f);
         playerScript.enabled = true;
         playerScript.velocity.x = 0f;
+    }
+
+    void explosion(){
+        GetComponent<AudioSource>().PlayOneShot(sonExplosion);
     }
 }

@@ -20,6 +20,8 @@ public class Lever : MonoBehaviour
     public AudioClip validSound;
     public AudioClip levier;
 
+    public GameObject eve;
+
     void Start()
     {
         playerScript = player.GetComponent<Player>();
@@ -68,6 +70,7 @@ public class Lever : MonoBehaviour
         playerScript.isLookingLeft = true;
         playerScript.enabled = false;
         Debug.Log("Ascenseur débloqué !");
+        eve.GetComponent<SpriteRenderer>().enabled = true;
         animMachine.SetTrigger("charge");
         yield return new WaitForSeconds(4f);
         head.GetComponent<SpriteRenderer>().enabled = false;

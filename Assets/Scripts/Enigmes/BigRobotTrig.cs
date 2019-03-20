@@ -6,6 +6,7 @@ public class BigRobotTrig : MonoBehaviour
 {
     public GameObject arm;
     public Animator animArm;
+    public AudioClip baisseBras;
 
     void Start()
     {
@@ -25,6 +26,8 @@ public class BigRobotTrig : MonoBehaviour
         {
             arm.GetComponent<BoxCollider2D>().enabled = true;
             animArm.SetTrigger("down");
+            GetComponent<AudioSource>().PlayOneShot(baisseBras); 
+
         }
     }
 
