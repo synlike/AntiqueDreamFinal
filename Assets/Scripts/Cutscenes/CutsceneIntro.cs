@@ -9,6 +9,8 @@ public class CutsceneIntro : MonoBehaviour
     public Camera cameraSecondo;
     public Player player;
 
+    public GameObject PanelEtoStart;
+
     Animator playerAnim;
     Animator anim;
     Player playerScript;
@@ -17,6 +19,7 @@ public class CutsceneIntro : MonoBehaviour
 
     Transform posCameraMain;
     bool dezoom;
+    public bool play;
 
 
     void Start()
@@ -38,11 +41,12 @@ public class CutsceneIntro : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Grab"))
+        if (play)
         {
             playerAnim.SetTrigger("standup");
             dezoom = true;
             anim.SetTrigger("activate");
+            play = false;
         }
 
         if (dezoom)
@@ -50,6 +54,11 @@ public class CutsceneIntro : MonoBehaviour
             StartCoroutine(Dezoom());
             //StartCoroutine(FadeTo(1.0f, 3f));
         }
+    }
+
+    void Play()
+    {
+        play = true;
     }
 
     IEnumerator Dezoom()

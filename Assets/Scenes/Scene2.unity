@@ -53026,7 +53026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515eb1038b5e3cc45aa31e4e0247f983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 0}
+  loadingScreen: {fileID: 8228720296809768105}
 --- !u!1 &1653873554
 GameObject:
   m_ObjectHideFlags: 0
@@ -64726,21 +64726,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8010109524819315668, guid: d1041835927d5034eba60e624ffcd270,
-        type: 3}
-      propertyPath: jumpHeight
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8010109524819315668, guid: d1041835927d5034eba60e624ffcd270,
-        type: 3}
-      propertyPath: jumpSound
-      value: 
-      objectReference: {fileID: 8300000, guid: fd86857b8f52e654098d5983bf139f8d, type: 3}
-    - target: {fileID: 8010109524819315675, guid: d1041835927d5034eba60e624ffcd270,
-        type: 3}
-      propertyPath: maxSlopeAngle
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 8010109524819315625, guid: d1041835927d5034eba60e624ffcd270,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -64796,16 +64781,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8010109524819315673, guid: d1041835927d5034eba60e624ffcd270,
-        type: 3}
-      propertyPath: image
-      value: 
-      objectReference: {fileID: 2035361295}
     - target: {fileID: 8010109524819315624, guid: d1041835927d5034eba60e624ffcd270,
         type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8010109524819315675, guid: d1041835927d5034eba60e624ffcd270,
+        type: 3}
+      propertyPath: maxSlopeAngle
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010109524819315668, guid: d1041835927d5034eba60e624ffcd270,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010109524819315673, guid: d1041835927d5034eba60e624ffcd270,
+        type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 2035361295}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1041835927d5034eba60e624ffcd270, type: 3}
 --- !u!1001 &6836818383400410623
