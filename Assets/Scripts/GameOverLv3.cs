@@ -6,7 +6,11 @@ public class GameOverLv3 : MonoBehaviour
 {
     public Transform respawn;
     public GameObject player;
-
+    public GameObject GameOverScreen;
+    public GameObject BoutonOui;
+    public GameObject BoutonNon;
+    public GameObject Zia_decede;
+    
     void Start()
     {
         
@@ -21,6 +25,12 @@ public class GameOverLv3 : MonoBehaviour
         if (collision.gameObject.tag == "player")
         {
             player.transform.position = respawn.position;
+            GameOverScreen.SetActive(true);
+            BoutonOui.SetActive(true);
+            BoutonNon.SetActive(true);
+            Zia_decede.SetActive(true);
+            player.SetActive(false);
+            print("touché");
         }
     }
 }

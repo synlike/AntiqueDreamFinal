@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MonologueReparageEve : MonoBehaviour
+public class MonologueSacados : MonoBehaviour
 {
 	public PlayerInput control;
 
@@ -61,7 +61,7 @@ public class MonologueReparageEve : MonoBehaviour
         panel.GetComponent<Image>().enabled = true;
         textComp.GetComponent<Text>().enabled = true;
         GetComponent<AudioSource>().PlayOneShot(zia);
-        message = "Il est sûrement possible de mettre des bouts de la créature dans cette machine...";
+        message = "Le robot ne peut pas monter. Je pourrais peut-être le prendre?";
         StartCoroutine(TypeText());
 
 

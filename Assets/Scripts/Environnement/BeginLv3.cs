@@ -6,6 +6,7 @@ public class BeginLv3 : MonoBehaviour
 {
     public SpriteRenderer sacados;
     public GameObject player;
+    public AudioClip eve;
 
     PlayerInput playerInput;
     Player playerScript;
@@ -34,5 +35,9 @@ public class BeginLv3 : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void SonEve(){
+        GetComponent<AudioSource>().PlayOneShot(eve);
     }
 }
