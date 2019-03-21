@@ -25,6 +25,8 @@ public class RotateCircle : MonoBehaviour
     public GameObject cercle2;
     public GameObject cercle3;
     public GameObject cercleNuke;
+    public GameObject environmentSound;
+    public GameObject environmentSoundCASSE;
 
     public GameObject pillar1;
     public GameObject pillar2;
@@ -75,6 +77,8 @@ public class RotateCircle : MonoBehaviour
         if(paternOk && !fading && doorOpen)
         {
             GetComponent<AudioSource>().PlayOneShot(ouvrir_porte);
+            environmentSound.SetActive(false);
+        environmentSoundCASSE.SetActive(true);
             anim.SetTrigger("Open");
             doorOpen = false;
 

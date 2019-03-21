@@ -10,6 +10,7 @@ public class BigRobot : MonoBehaviour
     public bool activated;
 
     public GameObject valve;
+
     public SpriteRenderer valveTmp;
     public SpriteRenderer valveHalo;
     public GameObject arm;
