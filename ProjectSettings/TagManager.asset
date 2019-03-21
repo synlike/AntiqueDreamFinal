@@ -22,6 +22,7 @@ TagManager:
   - metal
   - pierre
   - ladder
+  - robot
   layers:
   - Default
   - TransparentFX

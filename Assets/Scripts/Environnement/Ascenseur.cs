@@ -6,6 +6,7 @@ public class Ascenseur : MonoBehaviour
 {
     public GameObject player;
     public GameObject ascenseur;
+    public GameObject halo;
 
     Animator animAsc;
     PlayerInput playerInput;
@@ -43,6 +44,7 @@ public class Ascenseur : MonoBehaviour
         if (collision.gameObject.tag == "player")
         {
             inTrig = true;
+            halo.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 
@@ -51,6 +53,7 @@ public class Ascenseur : MonoBehaviour
         if (collision.gameObject.tag == "player")
         {
             inTrig = false;
+            halo.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }

@@ -26,7 +26,7 @@ public class ChoixFin : MonoBehaviour
 
     void Start()
     {
-        message = "zia ; Il est vrai que cette etrange creature m'a sauvé la vie ... \nDois - je le ramener au village ?";
+        message = "zia ; Il est vrai que cette etrange creature m'a sauvée la vie ... \nDois - je le ramener au village ?";
     }
 
     void Update()
@@ -44,7 +44,7 @@ public class ChoixFin : MonoBehaviour
         panelText.GetComponent<Image>().enabled = true;
         text.enabled = true;
         StartCoroutine(TypeText());
-        yield return new WaitForSeconds(9f);
+        yield return new WaitForSeconds(8f);
         panelBtn.GetComponent<Image>().enabled = true;
         btnYes.interactable = true;
         btnYesImg.enabled = true;

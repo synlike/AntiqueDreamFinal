@@ -115,7 +115,7 @@ public class Player : MonoBehaviour
             else if (jumpCount == 1)
             {
                 GetComponent<AudioSource>().PlayOneShot(jumpSound);
-                animator.SetBool("isjumping", true);
+                animator.SetBool("doubleJump", true);
                 jumping = true;
                 animator.SetFloat("jump_velocity", velocity.y);
                 velocity.y = jumpVelocity;

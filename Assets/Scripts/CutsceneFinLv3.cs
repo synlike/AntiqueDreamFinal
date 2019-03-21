@@ -6,6 +6,7 @@ public class CutsceneFinLv3 : MonoBehaviour
 {
     public ChoixFin scriptSuite;
 
+    public Animator ending;
     public GameObject player;
     Player playerScript;
     CharacterControllerZia controller;
@@ -46,7 +47,7 @@ public class CutsceneFinLv3 : MonoBehaviour
 
     public void activateCredits()
     {
-        animZia.SetTrigger("credits");
+        ending.SetTrigger("activate");
     }
 
     void OnTriggerEnter2D(Collider2D collision)

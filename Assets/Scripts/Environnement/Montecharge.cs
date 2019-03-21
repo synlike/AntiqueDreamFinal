@@ -5,6 +5,7 @@ using UnityEngine;
 public class Montecharge : MonoBehaviour
 {
     public GameObject player;
+    public GameObject halo;
 
     public bool inTrigger;
     Animator anim;
@@ -49,11 +50,17 @@ public class Montecharge : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "player")
+        {
             inTrigger = true;
+            halo.GetComponent<SpriteRenderer>().enabled = true;
+        }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "player")
+        {
             inTrigger = false;
+            halo.GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 }
