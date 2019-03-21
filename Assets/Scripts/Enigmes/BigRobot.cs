@@ -67,6 +67,7 @@ public class BigRobot : MonoBehaviour
                 valveHalo.enabled = true;
                 GetComponent<AudioSource>().PlayOneShot(insererValve); 
                 print("inserer valve"); // ICI ON INSERE LA VALVE DANS SA GROSSE 
+               
             }
         }
     }

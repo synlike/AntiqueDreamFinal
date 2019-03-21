@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: {fileID: 814647436485721932, guid: 76a6b03f65bc507479f30b672a2000ba, type: 3}
-  letterPause: 0.05
+  letterPause: 0.005
   mouton: {fileID: 8300000, guid: cea22c1be986f7d498451c5db11f7aaf, type: 3}
   zia: {fileID: 8300000, guid: a42b0b5271b2bcf45aad27d7aeb3d519, type: 3}
   panel: {fileID: 1612736339}
