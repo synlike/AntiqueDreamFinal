@@ -79,7 +79,7 @@ public class Borne : MonoBehaviour
         GetComponent<AudioSource>().PlayOneShot(valveSound);
         animValve.SetTrigger("activate");
         valveTmp.enabled = false;
-        animPlayer.SetTrigger("activateSpe");
+        animPlayer.SetTrigger("activate");
         activated = true;
         yield return new WaitForSeconds(1f);
         StartCoroutine(SwitchOn());

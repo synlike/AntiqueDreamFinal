@@ -471,6 +471,7 @@ MonoBehaviour:
   validSound: {fileID: 8300000, guid: dd00b8a8bc435344aa228c0fbf6b51fe, type: 3}
   levier: {fileID: 8300000, guid: d537cc8214d33e44e863faf86f693999, type: 3}
   eve: {fileID: 1176225802}
+  ascenseur: {fileID: 6527696369718233240}
 --- !u!82 &6449377
 AudioSource:
   m_ObjectHideFlags: 0
@@ -68831,6 +68832,18 @@ PrefabInstance:
       objectReference: {fileID: 1475881653}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24a26435a7e373e4f9dfed30181efc40, type: 3}
+--- !u!114 &6527696369718233240 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6527696369145293195, guid: 24a26435a7e373e4f9dfed30181efc40,
+    type: 3}
+  m_PrefabInstance: {fileID: 6527696369718233239}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958a602d5205a8844be58a0a75f06b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6750881331092742277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68965,6 +68978,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8010109524819315668, guid: d1041835927d5034eba60e624ffcd270,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010109524819315675, guid: d1041835927d5034eba60e624ffcd270,
+        type: 3}
+      propertyPath: maxSlopeAngle
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8010109524819315625, guid: d1041835927d5034eba60e624ffcd270,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -69024,16 +69047,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8010109524819315675, guid: d1041835927d5034eba60e624ffcd270,
-        type: 3}
-      propertyPath: maxSlopeAngle
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8010109524819315668, guid: d1041835927d5034eba60e624ffcd270,
-        type: 3}
-      propertyPath: jumpHeight
-      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 8010109524819315673, guid: d1041835927d5034eba60e624ffcd270,
         type: 3}

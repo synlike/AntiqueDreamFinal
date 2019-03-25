@@ -21,6 +21,7 @@ public class Lever : MonoBehaviour
     public AudioClip levier;
 
     public GameObject eve;
+    public Ascenseur ascenseur;
 
     void Start()
     {
@@ -39,6 +40,7 @@ public class Lever : MonoBehaviour
             if (machine.GetComponent<MachineEnigme>().threeParts)
             {
                 GetComponent<AudioSource>().PlayOneShot(validSound);
+                ascenseur.possible = true;
                 StartCoroutine(TimeBeforeControlBack());
             }
             else

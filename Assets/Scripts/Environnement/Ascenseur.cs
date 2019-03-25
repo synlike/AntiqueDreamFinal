@@ -14,6 +14,8 @@ public class Ascenseur : MonoBehaviour
     Player playerScript;
     bool inTrig;
 
+    public bool possible;
+
     void Start()
     {
         playerInput = player.GetComponent<PlayerInput>();
@@ -26,7 +28,7 @@ public class Ascenseur : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Grab") && inTrig == true)
+        if (Input.GetButtonDown("Grab") && inTrig == true && possible)
         {
             playerInput.enabled = false;
             controller.enabled = false;
@@ -41,7 +43,7 @@ public class Ascenseur : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "player")
+        if (collision.gameObject.tag == "player" && possible)
         {
             inTrig = true;
             halo.GetComponent<SpriteRenderer>().enabled = true;
@@ -50,7 +52,7 @@ public class Ascenseur : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "player")
+        if (collision.gameObject.tag == "player" && possible)
         {
             inTrig = false;
             halo.GetComponent<SpriteRenderer>().enabled = false;
