@@ -26,7 +26,7 @@ public class ChoixFin : MonoBehaviour
 
     void Start()
     {
-        message = "zia ; Il est vrai que cette etrange creature m'a sauvée la vie ... \nDois - je le ramener au village ?";
+        message = "zia : Il est vrai que cette etrange creature m'a sauvée la vie ... \nDois-je la ramener au village ?";
     }
 
     void Update()

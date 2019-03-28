@@ -2137,6 +2137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: {fileID: 814647436313389916}
+  player: {fileID: 1927017404}
   letterPause: 0.005
   sound1: {fileID: 8300000, guid: 4e50d338b45079344846895ffbba6a60, type: 3}
   sound2: {fileID: 8300000, guid: d0f08e1487512314489618c7a62d17e2, type: 3}
@@ -8920,6 +8921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: {fileID: 814647436485721932, guid: 76a6b03f65bc507479f30b672a2000ba, type: 3}
+  player: {fileID: 1927017404}
   letterPause: 0.005
   sound1: {fileID: 8300000, guid: c6a6e1007c6270c408762867d9ab6d2b, type: 3}
   sound2: {fileID: 8300000, guid: aa7182d26c35c194c958046aa3fb8457, type: 3}
@@ -13842,6 +13844,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: {fileID: 814647436313389916}
+  controller: {fileID: 814647436313389919}
+  player: {fileID: 1927017404}
   letterPause: 0.005
   sound1: {fileID: 8300000, guid: 7dd0b51c9790f394d8b5cf934b8f8867, type: 3}
   sound2: {fileID: 8300000, guid: 204b68cdd1baecb41b74d93bbb94bd5a, type: 3}
@@ -14781,6 +14785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: {fileID: 814647436485721932, guid: 76a6b03f65bc507479f30b672a2000ba, type: 3}
+  player: {fileID: 1927017404}
   letterPause: 0.005
   sound1: {fileID: 8300000, guid: cdd0730ba0289914da415bb9d27a16ec, type: 3}
   panel: {fileID: 1612736339}

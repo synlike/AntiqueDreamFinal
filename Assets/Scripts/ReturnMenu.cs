@@ -8,6 +8,6 @@ public class ReturnMenu : MonoBehaviour
 
     void returnMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DialogueMereZia : MonoBehaviour
 {
     public PlayerInput control;
+    public Player player;
 
     public float letterPause = 0.2f;
     int iterations = 0;
@@ -40,6 +41,9 @@ public class DialogueMereZia : MonoBehaviour
     {
         if (Input.GetButtonDown("Grab") && inTrigger && next)
         {
+            control.enabled = false;
+            player.enabled = false;
+            zia.SetBool("iswalking", false);
             next = false;
             print("blabla" +next);
             textComp.text = "";
@@ -82,6 +86,7 @@ public class DialogueMereZia : MonoBehaviour
                 panel.GetComponent<Image>().enabled = false;
                 textComp.GetComponent<Text>().enabled = false;
                 control.enabled = true;
+                player.enabled = true;
                 Destroy(this);
                 zia.SetBool("istalking",false);
             }

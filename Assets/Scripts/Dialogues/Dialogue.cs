@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Dialogue : MonoBehaviour
 {
     public PlayerInput control;
+    public Player player;
 
     public float letterPause = 0.2f;
     int iterations = 0;
@@ -40,6 +41,10 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetButtonDown("Grab") && inTrigger && next)
         {
+            control.enabled = false;
+            player.enabled = false;
+            zia.SetBool("iswalking", false);
+
             next = false;
             print("blabla" +next);
             textComp.text = "";
@@ -71,6 +76,7 @@ public class Dialogue : MonoBehaviour
                 anim.SetTrigger("finishSpeak");
                 zia.SetBool("istalking",false);
                 control.enabled = true;
+                player.enabled = true;
                 Destroy(this);
             }
 

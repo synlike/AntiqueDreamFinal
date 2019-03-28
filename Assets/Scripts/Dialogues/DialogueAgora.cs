@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DialogueAgora : MonoBehaviour
 {
     public PlayerInput control;
+    public Player player;
 
     public float letterPause = 0.2f;
     int iterations = 0;
@@ -44,6 +45,9 @@ public class DialogueAgora : MonoBehaviour
     {
         if (Input.GetButtonDown("Grab") && inTrigger && next)
         {
+            control.enabled = false;
+            player.enabled = false;
+            zia.SetBool("iswalking", false);
             next = false;
             textComp.text = "";
             if (iterations == 0)
@@ -75,6 +79,7 @@ public class DialogueAgora : MonoBehaviour
                 anim.SetBool("isspeaking",false);
                 zia.SetBool("istalking",false);
                 control.enabled = true;
+                player.enabled = true;
 
             }
 
